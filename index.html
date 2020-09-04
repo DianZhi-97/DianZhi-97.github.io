@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>DI Lab Homepage</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="assets/js/homepage.js"></script>
+
+</head>
+
+<body class="homepage">
+    <div>
+        <!-- navigation bar. same for all pages -->
+        <div class="navbar">
+            <div class="">
+                <a class="active" href="#home">Home</a>
+                <a href="#contact">Publication</a>
+                <a href="#about">Our Team</a>
+                <a href="#about">Research Project</a>
+                <a href="#about">Particcipation</a>
+                <a href="#about">For Students</a>
+                <a href="#about">Contact Us</a>
+            </div>
+        </div>
+
+        <!-- slideshow of lab images -->
+        <div class="slideshow_container">
+            <div class="slide">
+                <img class="fade" src="images/img01.jpeg" alt="Hello">
+                <img class="fade" src="images/img02.jpg" alt="Hello">
+                <img class="fade" src="images/img03.jpeg" alt="Hello">
+            </div>
+            <!-- lab title/button on the slideshow -->
+            <div class="elem_on_top_of_slideshow">
+                <div class="main_title"><strong>Welcome to the Developmental Intelligence Lab</strong></div>
+                <br><br>
+                <a class="more_btn" href="#intro">More...</a>
+            </div>
+            <!-- previous and next button to change slideshow image -->
+            <button class="prev_btn" onclick="nextSlide(-1)">&#10094</button>
+            <button class="next_btn" onclick="nextSlide(1)">&#10095</button>
+
+            <!-- slideshow dots indiacting which image the slide is showing -->
+            <div class="slide_indicator">
+                <span class="active" onclick="currentSlide(1)"></span>
+                <span class="" onclick="currentSlide(2)"></span>
+                <span class="" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+
+        <!-- introduction -->
+        <br id="intro" style="height: 30px;">
+        <section class="article">
+            <h1 class="intro_title"><strong>About us</strong></h1>
+            <p class="intro_content">
+                Yong children learn the meanings of thousands of words
+                by the time they can run down the street. The computational
+                problem they solve is daunting: extracting discrete word
+                froms from a sequence of continuous speech signals and
+                mapping these forms onto their meanings. Yet, the same
+                children who solde this problem continuously forget where
+                they left their coats and hats. How do children learn
+                language so quickly despite cognitive constraints on
+                memory, attention, and information processing?
+            </p>
+        </section>
+
+        <!-- cards container -->
+        <section class="card_container">
+            <h1 class="intro_title"><strong>Lab highlights</strong></h1>
+            <div class="card_grid">
+                <div class="card_highlight">
+                    <a href="images/img03.jpeg" class="card">
+                        <div class="thumb" style="background-image: url(images/img01.jpeg);"></div>
+                        <article class="card_text">
+                            <h1 class="card_title">International Artist Feature: Malaysia</h1>
+                            <span class="card_author">Mary Winkler</span>
+                        </article>
+                    </a>
+                </div>
+                <div>
+                    <a href="images/img03.jpeg" class="card">
+                        <div class="thumb" style="background-image: url(images/img01.jpeg);"></div>
+                        <article class="card_text">
+                            <h1 class="card_title">International Artist Feature: Malaysia</h1>
+                            <span class="card_author">Mary Winkler</span>
+                        </article>
+                    </a>
+                </div>
+                <div>
+                    <a href="images/img03.jpeg" class="card">
+                        <div class="thumb" style="background-image: url(images/img01.jpeg);"></div>
+                        <article class="card_text">
+                            <h1 class="card_title">International Artist Feature: Malaysia</h1>
+                            <span class="card_author">Published Paper</span>
+                        </article>
+                    </a>
+                </div>
+                <div>
+                    <a href="images/img03.jpeg" class="card">
+                        <div class="thumb" style="background-image: url(images/img01.jpeg);"></div>
+                        <article class="card_text">
+                            <h1 class="card_title">International Artist Feature: Malaysia</h1>
+                            <span class="card_author">Research Project</span>
+                        </article>
+                    </a>
+                </div>
+                <div>
+                    <a href="images/img03.jpeg" class="card">
+                        <div class="thumb" style="background-image: url(images/img01.jpeg);"></div>
+                        <article class="card_text">
+                            <h1 class="card_title">International Artist Feature: Malaysia</h1>
+                            <span class="card_author">News</span>
+                        </article>
+                    </a>
+                </div>
+                <div class="card_highlight">
+                    <a href="images/img03.jpeg" class="card">
+                        <video controls>
+                            <source src="/Users/dianzhi/Downloads/download.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <!-- <div class="thumb" style="background-image: url(images/img01.jpeg);"></div> -->
+                        <article class="card_text">
+                            <h1 class="card_title">International Artist Feature: Malaysia</h1>
+                            <span class="card_author">Video</span>
+                        </article>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact information -->
+        <section style="background-color: grey; padding: 30px;" class="contact_info">
+            <img style="float: left; width: 100px;" src="images/img02.jpg">
+            <p style="text-align: center; color: white;"><strong>Contact Info</strong><br><br>
+            lab email: | phone: | address: </p> 
+
+        </section>
+    </div>
+</body>
+
+</html>
